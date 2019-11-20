@@ -25,18 +25,12 @@ body,
 
 #blogHeader,
 #beigeHeader {
-  font-size: 70px;
+  font-size: 55px;
   font-weight: 500;
   font-family: "Cormorant Garamond", serif;
   color: #4a455c;
   padding-left: 30px;
   padding-top: 20px;
-}
-
-button {
-  font-size: 22px;
-  font-weight: 500;
-  font-family: "Montserrat", serif;
 }
 
 .topnav {
@@ -69,9 +63,24 @@ button {
   width: 200px;
 }
 
+button {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Montserrat", serif;
+}
+
+.container {
+  padding: 18px;
+}
+
+.container button {
+  background-color: #ff6141;
+  border: 0px;
+  font-size: 18px;
+  color: #ffffff;
+}
+
 .container .blog1 {
-  padding: 30px;
-  padding-bottom: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -79,7 +88,7 @@ button {
 }
 
 .container .blog1 item {
-  height: 100px;
+  height: 370px;
   width: 300px;
   margin: auto;
   padding: 12px;
@@ -93,7 +102,7 @@ button {
 
 .container .blog1 item .description {
   margin: 0px;
-  padding: 10px;
+  padding: 20px;
   background-color: #4a455c;
 }
 
@@ -103,6 +112,18 @@ button {
   position: relative;
   top: 5px;
   z-index: -100;
+}
+
+.container .blog2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .blog3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #image-1 {

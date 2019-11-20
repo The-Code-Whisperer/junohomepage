@@ -2,6 +2,7 @@
 $purple: #4a455c;
 $grey: #7c7d98;
 $orange: #d64c31;
+$brightorange: #ff6141;
 $beige: #fff0e7;
 $white: #ffffff;
 $light-blue: #e3eaef;
@@ -33,7 +34,7 @@ body,
 
 #blogHeader,
 #beigeHeader {
-    font-size: 70px;
+    font-size: 55px;
     font-weight: 500;
     font-family: "Cormorant Garamond", serif;
     color: $purple;
@@ -41,11 +42,7 @@ body,
     padding-top: 20px;
 }
 
-button {
-    font-size: 22px;
-    font-weight: 500;
-    font-family: "Montserrat", serif;
-}
+
 
 // topnav
 .topnav {
@@ -75,16 +72,24 @@ button {
 }
 
 // flex-box containers
-
+button {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Montserrat", serif;
+}
 .container {
+    padding: 18px;
+    button {
+        background-color: $brightorange;
+        border: 0px;
+        font-size: 18px;
+        color: $white;
+    }
     .blog1 {
-        padding: 30px;
-        padding-bottom: 400px;
         display: flex;
         width: 70%;
-
         item {
-            height: 100px;
+            height: 370px;
             width: 300px;
             margin: auto;
             padding: 12px;
@@ -95,7 +100,7 @@ button {
             }
             .description {
                 margin: 0px;
-                padding: 10px;
+                padding: 20px;
                 background-color: $purple;
             }
             img {
@@ -106,6 +111,12 @@ button {
                 z-index: -100;
             }
         }
+    }
+    .blog2 {
+        display: flex;
+    }
+    .blog3 {
+        display: flex;
     }
 }
 
