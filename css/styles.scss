@@ -69,21 +69,50 @@ body,
   }
 }
 
-// flex-box containers
+// grid containers
+.container {
+  padding: 18px;
+  display: grid;
+  .box {
+    color: $white;
+    .blogCardHeader {
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .description {
+      margin: 0px;
+      padding: 20px;
+      background-color: $purple;
+    }
+    img {
+      height: auto;
+      width: 100%;
+      position: relative;
+      top: 5px;
+      z-index: -100;
+    }
+  }
+}
+// custom button
 button {
   font-size: 18px;
   font-weight: 500;
   font-family: "Montserrat", serif;
+  background-color: $brightorange;
+  border: 0px;
+  font-size: 18px;
+  color: $white;
 }
+
+// flex-box containers
+/*
+
 .container {
   padding: 18px;
   display: flex;
   flex-basis: 70%;
   button {
-    background-color: $brightorange;
-    border: 0px;
-    font-size: 18px;
-    color: $white;
+
   }
   item {
     height: 370px;
@@ -109,6 +138,8 @@ button {
     }
   }
 }
+*/
+
 
 .blog {
   height: 700px;
