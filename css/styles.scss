@@ -7,208 +7,201 @@ $beige: #fff0e7;
 $white: #ffffff;
 $light-blue: #e3eaef;
 .beige {
-    background-color: $beige;
+  background-color: $beige;
 }
 
 // fonts
 .footlink {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
 }
 
 #junotechtest {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 45px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 45px;
 }
 
 body,
 .date {
-    font-size: 15px;
-    font-weight: 400;
-    font-family: "Montserrat", sans-serif;
-    margin-left: 0px;
-    margin-right: 0px;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 #blogHeader,
 #beigeHeader {
-    font-size: 55px;
-    font-weight: 500;
-    font-family: "Cormorant Garamond", serif;
-    color: $purple;
-    padding-left: 30px;
-    padding-top: 20px;
+  font-size: 55px;
+  font-weight: 500;
+  font-family: "Cormorant Garamond", serif;
+  color: $purple;
+  padding-left: 30px;
+  padding-top: 20px;
 }
-
-
 
 // topnav
 .topnav {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    background-color: $white;
-    a:hover {
-        background-color: $light-blue;
-    }
-    .icon {
-        display: none;
-    }
-    a {
-        display: inline;
-        vertical-align: middle;
-        color: $purple;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 18px;
-    }
-    img {
-        height: auto;
-        vertical-align: middle;
-        width: 200px;
-    }
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  background-color: $white;
+  a:hover {
+    background-color: $light-blue;
+  }
+  .icon {
+    display: none;
+  }
+  a {
+    display: inline;
+    vertical-align: middle;
+    color: $purple;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  img {
+    height: auto;
+    vertical-align: middle;
+    width: 200px;
+  }
 }
 
 // flex-box containers
 button {
-    font-size: 18px;
-    font-weight: 500;
-    font-family: "Montserrat", serif;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Montserrat", serif;
 }
 .container {
-    padding: 18px;
-    button {
-        background-color: $brightorange;
-        border: 0px;
-        font-size: 18px;
-        color: $white;
+  padding: 18px;
+  display: flex;
+  flex-basis: 70%;
+  button {
+    background-color: $brightorange;
+    border: 0px;
+    font-size: 18px;
+    color: $white;
+  }
+  item {
+    height: 370px;
+    width: 300px;
+    margin: auto;
+    padding: 12px;
+    color: $white;
+    .blogCardHeader {
+      font-size: 20px;
+      font-weight: 700;
     }
-    .blog1 {
-        display: flex;
-        width: 70%;
-        item {
-            height: 370px;
-            width: 300px;
-            margin: auto;
-            padding: 12px;
-            color: $white;
-            .blogCardHeader {
-                font-size: 20px;
-                font-weight: 700;
-            }
-            .description {
-                margin: 0px;
-                padding: 20px;
-                background-color: $purple;
-            }
-            img {
-                height: auto;
-                width: 100%;
-                position: relative;
-                top: 5px;
-                z-index: -100;
-            }
-        }
+    .description {
+      margin: 0px;
+      padding: 20px;
+      background-color: $purple;
     }
-    .blog2 {
-        display: flex;
+    img {
+      height: auto;
+      width: 100%;
+      position: relative;
+      top: 5px;
+      z-index: -100;
     }
-    .blog3 {
-        display: flex;
-    }
+  }
 }
 
+.blog {
+  height: 700px;
+}
 // images
 #image-1 {
-    width: 100%;
+  width: 100%;
 }
 
 // responsive to window resizing topnav and tech container
 #techContainer {
-    padding-top: 0px;
-    margin-right: 0px;
-    width: 100%;
-    height: auto;
-    position: relative;
+  padding-top: 0px;
+  margin-right: 0px;
+  width: 100%;
+  height: auto;
+  position: relative;
 }
 #techHeader {
-    margin-top: 25px;
+  margin-top: 25px;
 }
 
 @media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {
-        display: none;
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {
+    position: relative;
+    .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
     }
-    .topnav a.icon {
-        float: right;
-        display: block;
+    a {
+      display: block;
+      text-align: left;
     }
-    .topnav.responsive {
-        position: relative;
-        .icon {
-            position: absolute;
-            right: 0;
-            top: 0;
-        }
-        a {
-            display: block;
-            text-align: left;
-        }
-    }
-    #techContainer {
-        padding-top: 135px;
-    }
-    #techHeader {
-        font-family: "Cormorant Garamond", serif;
-        font-weight: 500;
-        font-size: 40px;
-    }
-    .techText {
-        width: 90%;
-        position: absolute;
-        left: 0px;
-        top: 0px;
-        z-index: 10;
-        background-color: $orange;
-        padding-left: 50px;
-        padding-bottom: 10px;
-        padding-right: 10px;
-        color: $white;
-    }
+  }
+  #techContainer {
+    padding-top: 135px;
+  }
+  #techHeader {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-size: 40px;
+  }
+  .techText {
+    width: 90%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 10;
+    background-color: $orange;
+    padding-left: 50px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    color: $white;
+  }
 }
 @media screen and (min-width: 601px) {
-    #techContainer {
-        width: 100%;
-        height: auto;
-        position: relative;
-        padding-bottom: 100px;
-    }
-    #techHeader {
-        font-family: "Cormorant Garamond", serif;
-        font-weight: 500;
-        font-size: 60px;
-    }
-    .techText {
-        width: 450px;
-        position: absolute;
-        right: 0px;
-        bottom: 0px;
-        z-index: 100;
-        background-color: $orange;
-        padding-left: 50px;
-        margin-top: 0px;
-        padding-top: 0px;
-        padding-bottom: 30px;
-        padding-right: 10px;
-        color: $white;
-    }
+  #techContainer {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-bottom: 100px;
+  }
+  #techHeader {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-size: 60px;
+  }
+  .techText {
+    width: 450px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    z-index: 100;
+    background-color: $orange;
+    padding-left: 50px;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 30px;
+    padding-right: 10px;
+    color: $white;
+  }
 }
 
 @media screen and (min-width: 900px) {
-    body {
-        margin: auto;
-        width: 900px;
-    }
+  body {
+    margin: auto;
+    width: 900px;
+  }
 }

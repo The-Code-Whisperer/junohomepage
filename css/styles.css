@@ -71,6 +71,11 @@ button {
 
 .container {
   padding: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
 }
 
 .container button {
@@ -80,14 +85,7 @@ button {
   color: #ffffff;
 }
 
-.container .blog1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 70%;
-}
-
-.container .blog1 item {
+.container item {
   height: 370px;
   width: 300px;
   margin: auto;
@@ -95,18 +93,18 @@ button {
   color: #ffffff;
 }
 
-.container .blog1 item .blogCardHeader {
+.container item .blogCardHeader {
   font-size: 20px;
   font-weight: 700;
 }
 
-.container .blog1 item .description {
+.container item .description {
   margin: 0px;
   padding: 20px;
   background-color: #4a455c;
 }
 
-.container .blog1 item img {
+.container item img {
   height: auto;
   width: 100%;
   position: relative;
@@ -114,16 +112,8 @@ button {
   z-index: -100;
 }
 
-.container .blog2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.container .blog3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.blog {
+  height: 700px;
 }
 
 #image-1 {
