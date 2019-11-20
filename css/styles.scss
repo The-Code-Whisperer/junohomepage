@@ -75,40 +75,39 @@ button {
 }
 
 // flex-box containers
-    
-.container.blog {
-    padding: 30px;
-    display: flex;
-    height: auto;
-    width: 70%;
 
-    item {
-        height: 100px;
-        width: 300px;
-        margin: auto;
-        padding: 12px;
-        color: $white;
-        .blogCardHeader {
-            font-size: 20px;
-            font-weight: 700;
+.container {
+    .blog1 {
+        padding: 30px;
+        padding-bottom: 400px;
+        display: flex;
+        width: 70%;
+
+        item {
+            height: 100px;
+            width: 300px;
+            margin: auto;
+            padding: 12px;
+            color: $white;
+            .blogCardHeader {
+                font-size: 20px;
+                font-weight: 700;
+            }
+            .description {
+                margin: 0px;
+                padding: 10px;
+                background-color: $purple;
+            }
+            img {
+                height: auto;
+                width: 100%;
+                position: relative;
+                top: 5px;
+                z-index: -100;
+            }
         }
-        .description {
-            margin: 0px;
-            padding: 10px;
-            background-color: $purple;
-        }
-        img {
-            height: auto;
-            width: 100%;
-            position: relative;
-            top: 5px;
-            z-index: -100;
-        }
-    
     }
 }
-
-
 
 // images
 #image-1 {
