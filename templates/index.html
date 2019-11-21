@@ -7,108 +7,189 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/7df8c44ff5.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../css/styles.css" type="text/css">
   <script src="../js/script.js"></script>
   <title>Technical Test</title>
 </head>
 
-<body>
-  <!-- navbar with image logo and 4 links that resize. -->
-  <div class="topnav" id="myTopnav">
-    <img src="../assets/junologo.png">
-    <a href="#techHeader">Course</a>
-    <a href="#about">About</a>
-    <a href="#alumni">Alumni</a>
-    <a href="#blogHeader">Blog</a>
-    <a class="icon" onclick="navResize()"><i class="fa fa-bars"></i></a>
-    <!-- navbar scrolls to #id -->
-  </div>
+<body class="lightBeigeBack">
 
-  <div id="techContainer">
-    <img id="image-1" src="../assets/image-1.jpg">
-    <div class="techText">
-      <div id=techHeader>Tech Challenge</div>
-      Lorem ipsum dolor sit amet, consectutur adipiscing elit.
-      Maecenas varius tortor nibh, sit amet tempor nibh finibus et.
-      Aenean eu enim justo. Vestibulum aliquam hendrerit molestie.
+  <div id="page">
+    <!-- navbar with image logo and 4 links that resize. -->
+    <div class="topnav" id="myTopnav">
+      <img src="../assets/junologo.png">
+      <a href="#techHeader">Course</a>
+      <a href="#about">About</a>
+      <a href="#alumni">Alumni</a>
+      <a href="#blogHeader">Blog</a>
+      <a class="icon" onclick="navResize()"><i class="fa fa-bars"></i></a>
+      <!-- navbar scrolls to #id -->
     </div>
-  </div>
 
-  <div id="blogHeader">Blog</div>
-  <div class="container blog">
-    <div class="box1">
-      <img id="image-2" src="../assets/image-2.jpg">
-      <div class="description">
-        <div class="blogCardHeader">Juno Tech Test</div>
-        <p>
-          Lorem ipsum dolor sit amet, consectutur adipiscing elit.
-          Maecenas varius tortor nibh.
-        </p>
-        <button>Read More</button>
+    <div id="techContainer">
+      <img id="image-1" src="../assets/image-1.jpg">
+      <div class="techText">
+        <div id=techHeader>Tech Challenge</div>
+        Lorem ipsum dolor sit amet, consectutur adipiscing elit.
+        Maecenas varius tortor nibh, sit amet tempor nibh finibus et.
+        Aenean eu enim justo. Vestibulum aliquam hendrerit molestie.
       </div>
     </div>
 
-    <div class="box2">
-      <img id="image-3" src="../assets/image-3.jpg">
-      <div class="description">
-        <div class="blogCardHeader">Juno Tech Test</div>
-        <p>
-          Lorem ipsum dolor sit amet, consectutur adipiscing elit.
-          Maecenas varius tortor nibh.
-        </p>
-        <button>Read More</button>
+    <div id="blogHeader">Blog</div>
+    <div class="container">
+      <div class="box1">
+        <img id="about" src="../assets/image-2.jpg">
+        <div class="description">
+          <div class="beigeFont date">MAR 9, 2019</div>
+          <div class="blogCardHeader">Juno Tech Test</div>
+          <p>
+            Lorem ipsum dolor sit amet, consectutur adipiscing elit.
+            Maecenas varius tortor nibh.
+          </p>
+          <button>Read More</button>
+        </div>
+      </div>
+
+      <div class="box2">
+        <img src="../assets/image-3.jpg">
+        <div class="description">
+          <div class="beigeFont date">MAR 15, 2019</div>
+          <div class="blogCardHeader">Juno Tech Test</div>
+          <p>
+            Lorem ipsum dolor sit amet, consectutur adipiscing elit.
+            Maecenas varius tortor nibh.
+          </p>
+          <button>Read More</button>
+        </div>
+      </div>
+
+      <div class="box3">
+        <img src="../assets/image-4.jpg">
+        <div class="description">
+          <div class="blogCardHeader2 beigeFont">About us</div>
+          <p>
+            Lorem ipsum dolor sit amet, consectutur adipiscing elit. Maecenas varius tortor nibh, sit amet
+            tempor nibh finibus et. Aenean eu enim justo. Vestibulum aliquam hendrerit molestie. Mauris
+            malesuada nisi sit amet augue accumsan tincidunt. Maecenas tincidunt, velit ac porttitor
+            pulvinar, tortor eros facilisis libero, vitae commodo nunc quam et ligula. Ut nec ipsum sapien.
+            Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer id nisi nec nulla luctus.
+          </p>
+          <button>Read More</button>
+        </div>
+      </div>
+
+      <!-- blog container -->
+      <div class="box4">
+        <img id="image-5" src="../assets/image-5.jpg">
+        <div class="description">
+          <div class="beigeFont date">APRIL 30, 2019</div>
+          <div class="blogCardHeader">Juno Tech Test</div>
+          <p>
+            Lorem ipsum dolor sit amet, consectutur adipiscing elit.
+            Maecenas varius tortor nibh, sit amet tempor nibh finibus et.
+            Aenean eu enim justo. Vestibulum aliquam hendrerit molestie.
+            Mauris malesuada nisi sit amet augue accumsan tincidunt.
+          </p>
+          <button>Read More</button>
+        </div>
       </div>
     </div>
 
-    <div class="box3">
-      <img id="image-4" src="../assets/image-4.jpg">
-      <div class="description">
-        <div class="blogCardHeader">About us</div>
-        <p>
-          Lorem ipsum dolor sit amet, consectutur adipiscing elit. Maecenas varius tortor nibh, sit amet
-          tempor nibh finibus et. Aenean eu enim justo. Vestibulum aliquam hendrerit molestie. Mauris
-          malesuada nisi sit amet augue accumsan tincidunt. Maecenas tincidunt, velit ac porttitor
-          pulvinar, tortor eros facilisis libero, vitae commodo nunc quam et ligula. Ut nec ipsum sapien.
-          Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer id nisi nec nulla luctus.
-        </p>
-        <button>Read More</button>
+    <div class="beigeBack" id="beigeHeader">Related Posts:</div>
+    <div class="beigeBack container">
+      <div class="postBox1 whiteBack">
+        <img id="about" src="../assets/image-2.jpg">
+        <div class="description whiteBack">
+          <div class="date whiteBack">MAR 9, 2019</div>
+          <div class="blogCardHeader postDescHead">Juno Tech Test</div>
+          <p>
+            Lorem ipsum dolor sit amet, consectutur adipiscing elit.
+            Maecenas varius tortor nibh.
+          </p>
+          <button class="whiteButton">Read More</button>
+        </div>
+      </div>
+
+      <div class="postBox2 whiteBack">
+        <img src="../assets/image-3.jpg">
+        <div class="description whiteBack">
+          <div class="date whiteBack">MAR 15, 2019</div>
+          <div class="blogCardHeader postDescHead">Juno Tech Test</div>
+          <p>
+            Lorem ipsum dolor sit amet, consectutur adipiscing elit.
+            Maecenas varius tortor nibh.
+          </p>
+          <button class="whiteButton">Read More</button>
+        </div>
+      </div>
+
+      <div class="postBox3 whiteBack">
+        <img src="../assets/image-3.jpg">
+        <div class="description whiteBack">
+          <div class="date whiteBack">MAR 15, 2019</div>
+          <div class="blogCardHeader postDescHead">Juno Tech Test</div>
+          <p>
+            Lorem ipsum dolor sit amet, consectutur adipiscing elit.
+            Maecenas varius tortor nibh.
+          </p>
+          <button class="whiteButton">Read More</button>
+        </div>
       </div>
     </div>
 
-    <!-- blog container -->
-    <div class="box4">
-      <img id="image-5" src="../assets/image-5.jpg">
-      <div class="description">
-        <div class="blogCardHeader">Juno Tech Test</div>
-        <p>
+
+    <div class="subscribeBox">
+      <div class="purpleBack">
+        <item>
+          Join our mailing list
+        </item>
+        <item>
+          <input type="email" name="email">
+        </item>
+        <item>
+          <input type="submit" value="Subscribe">
+        </item>
+        <item>
+          Lorem ipsum dolor sit amet, consectutur adipiscing elit maecenas.
+        </item>
+        <item>
+          <i class="fab fa-facebook-f fa-2x"></i>
+          <i class="fab fa-twitter fa-2x"></i>
+          <i class="fab fa-instagram fa-2x"></i>
+          <i class="fab fa-github fa-2x"></i>
+        </item>
+
+      </div>
+    </div>
+    <footer>
+      <div class="footerBox1">
+        <img src="../assets/orangejunologo.jpg">
+
+        <div class="footerHeader">Juno Tech Test</div>
+        <div>
           Lorem ipsum dolor sit amet, consectutur adipiscing elit.
+        </div>
+        <div>
           Maecenas varius tortor nibh, sit amet tempor nibh finibus et.
-          Aenean eu enim justo. Vestibulum aliquam hendrerit molestie.
-          Mauris malesuada nisi sit amet augue accumsan tincidunt.
-        </p>
-        <button>Read More</button>
+        </div>
+        <div>
+          <a href="#top">Home</a>
+          <a href="#techHeader">Course</a>
+          <a href="#about">About</a>
+          <a href="#alumni">Alumni</a>
+          <a href="#blogHeader">Blog</a>
+        </div>
+        <div>
+          &copy; 2012-2019 Juno College of Technology
+        </div>
       </div>
-    </div>
+
+    </footer>
+
+
   </div>
-  <!-- heading by imported css selected by id
-	container to hold blog section
-	4 flexbox containers, must be cards, buttons
-	css for buttons and cards -->
-  <div class="beige" id="beigeHeader">Related Post:</div>
-  <div class="beige container">
-
-    <!-- container "Related Post" -->
-    container, background beige
-    related post
-    3 flexbox containers, cannot use bootstrap cards,
-    use equivalent
-  </div>
-
-  <footer>
-    bottom footer navbar?
-    container on right with front z-index
-  </footer>
-
 </body>
 
 </html>
