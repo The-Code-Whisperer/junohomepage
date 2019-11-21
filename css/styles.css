@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .lightBeigeBack {
   background-color: #fdf9f6;
 }
@@ -358,8 +363,8 @@ footer .footerHeader {
 footer .footBox {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto;
-      grid-template-columns: auto;
+  -ms-grid-columns: 400px;
+      grid-template-columns: 400px;
   -ms-grid-rows: 63px 35px 20px 33px 45px;
       grid-template-rows: 63px 35px 20px 33px 45px;
 }

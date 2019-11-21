@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 // colours
 $purple: #4a455c;
 $grey: #7c7d98;
@@ -318,7 +322,7 @@ footer {
   }
   .footBox {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 400px;
     grid-template-rows: 63px 35px 20px 33px 45px;
   }
   .subBox {
