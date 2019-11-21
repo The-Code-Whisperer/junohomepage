@@ -268,6 +268,7 @@ body {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
+  margin-bottom: 30px;
 }
 
 .container .postBox2 {
@@ -277,6 +278,7 @@ body {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
+  margin-bottom: 30px;
 }
 
 .container .postBox3 {
@@ -286,6 +288,7 @@ body {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
+  margin-bottom: 30px;
 }
 
 button {
@@ -315,19 +318,19 @@ button {
 }
 
 footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 290px;
+      grid-template-columns: auto 290px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 11px;
   background-color: #d64c31;
   color: #ffffff;
   padding-left: 40px;
-  padding-bottom: 0px;
-  -webkit-box-pack: safe space-between;
-      -ms-flex-pack: safe space-between;
-          justify-content: safe space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  grid-gap: 10px;
 }
 
 footer img {
@@ -352,21 +355,55 @@ footer .footerHeader {
   font-weight: 600;
 }
 
-footer .subscribeBox {
-  width: 90%;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  z-index: 10;
-  background-color: #d64c31;
-  padding-left: 30px;
-  padding-bottom: 10px;
-  padding-right: 30px;
-  color: #ffffff;
-  height: 300px;
+footer .footBox {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: 63px 35px 20px 33px 45px;
+      grid-template-rows: 63px 35px 20px 33px 45px;
 }
 
-i {
-  padding-right: 18px;
+footer .subBox {
+  padding: 40px;
+  margin-top: -80px;
+  -webkit-transform: translate(-40px, 10px);
+          transform: translate(-40px, 10px);
+  display: -ms-grid;
+  display: grid;
+  justify-items: start;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: 30px 36px 8px 30px 60px;
+      grid-template-rows: 30px 36px 8px 30px 60px;
+}
+
+footer .subBox .subHeader {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+footer .subBox [type="email"] {
+  border-radius: 5px;
+  border-style: none;
+  border-color: black;
+  padding-left: 12px;
+}
+
+footer .subBox .subButton {
+  background-color: #FFCEB0;
+  border-radius: 5px;
+  border-style: none;
+  padding-left: 14px;
+  padding-right: 14px;
+  font-weight: 500;
+}
+
+footer .subBox i {
+  margin-right: 14px;
+}
+
+footer #copyright {
+  font-weight: 800;
 }
 /*# sourceMappingURL=styles.css.map */

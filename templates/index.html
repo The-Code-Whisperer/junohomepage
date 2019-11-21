@@ -14,7 +14,6 @@
 </head>
 
 <body class="lightBeigeBack">
-
   <div id="page">
     <!-- navbar with image logo and 4 links that resize. -->
     <div class="topnav" id="myTopnav">
@@ -80,9 +79,8 @@
         </div>
       </div>
 
-      <!-- blog container -->
-      <div class="box4">
-        <img id="image-5" src="../assets/image-5.jpg">
+      <div id="alumni" class="box4">
+        <img src="../assets/image-5.jpg">
         <div class="description">
           <div class="beigeFont date">APRIL 30, 2019</div>
           <div class="blogCardHeader">Juno Tech Test</div>
@@ -140,33 +138,13 @@
     </div>
 
 
-    <div class="subscribeBox">
-      <div class="purpleBack">
-        <item>
-          Join our mailing list
-        </item>
-        <item>
-          <input type="email" name="email">
-        </item>
-        <item>
-          <input type="submit" value="Subscribe">
-        </item>
-        <item>
-          Lorem ipsum dolor sit amet, consectutur adipiscing elit maecenas.
-        </item>
-        <item>
-          <i class="fab fa-facebook-f fa-2x"></i>
-          <i class="fab fa-twitter fa-2x"></i>
-          <i class="fab fa-instagram fa-2x"></i>
-          <i class="fab fa-github fa-2x"></i>
-        </item>
 
-      </div>
-    </div>
+
     <footer>
-      <div class="footerBox1">
-        <img src="../assets/orangejunologo.jpg">
-
+      <div class="footBox">
+        <div>
+          <img src="../assets/orangejunologo.jpg">
+        </div>
         <div class="footerHeader">Juno Tech Test</div>
         <div>
           Lorem ipsum dolor sit amet, consectutur adipiscing elit.
@@ -175,20 +153,32 @@
           Maecenas varius tortor nibh, sit amet tempor nibh finibus et.
         </div>
         <div>
-          <a href="#top">Home</a>
+          <a href="#page">Home</a>
           <a href="#techHeader">Course</a>
           <a href="#about">About</a>
           <a href="#alumni">Alumni</a>
           <a href="#blogHeader">Blog</a>
         </div>
-        <div>
+        <div id="copyright">
           &copy; 2012-2019 Juno College of Technology
         </div>
       </div>
+      <div class="subBox purpleBack">
+        <div class="subHeader">Join our mailing list</div>
+        <input type="email" name="email" placeholder="Your email address">
+        <br>
+        <input class="subButton" type="submit" value="Subscribe" onclick="subscribe()">
+        <br>
+        Lorem ipsum dolor sit amet, consectutur adipiscing elit maecenas.
+        <div>
+          <i class="fab fa-facebook-f fa-2x"></i>
+          <i class="fab fa-twitter fa-2x"></i>
+          <i class="fab fa-instagram fa-2x"></i>
+          <i class="fab fa-github fa-2x"></i>
+        </div>
 
+      </div>
     </footer>
-
-
   </div>
 </body>
 

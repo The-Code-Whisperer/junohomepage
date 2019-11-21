@@ -7,3 +7,7 @@ function navResize() {
     x.className = "topnav";
   }
 }
+
+function subscribe() {
+    alert("You have been subscribed (not really).")
+}
