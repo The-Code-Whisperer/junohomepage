@@ -277,7 +277,6 @@ button:hover {
   background-color: $purple;
 }
 
-
 // custom button
 .whiteButton {
   font-size: 11px;
@@ -295,7 +294,6 @@ button:hover {
 .whiteButton:hover {
   background-color: $grey;
 }
-
 
 // footer
 footer {
@@ -328,7 +326,6 @@ footer {
     font-size: 15px;
     font-weight: 600;
     position: relative;
-
   }
   a:hover {
     background-color: $purple;
@@ -341,7 +338,6 @@ footer {
     display: grid;
     grid-template-columns: 400px;
     grid-template-rows: 63px 35px 20px 33px 45px;
-    
   }
   .subBox {
     padding: 40px;
