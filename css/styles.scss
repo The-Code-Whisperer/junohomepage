@@ -270,6 +270,13 @@ button {
   padding-left: 15px;
   padding-right: 15px;
 }
+button:hover {
+  background-color: $grey;
+}
+#aboutButton:hover {
+  background-color: $purple;
+}
+
 
 // custom button
 .whiteButton {
@@ -285,6 +292,10 @@ button {
   padding-left: 15px;
   padding-right: 15px;
 }
+.whiteButton:hover {
+  background-color: $grey;
+}
+
 
 // footer
 footer {
@@ -306,14 +317,21 @@ footer {
     width: 160px;
     height: auto;
   }
+  .movedLeft {
+    transform: translate(-9px, 0px);
+  }
   a {
     display: inline;
     color: $white;
-    padding: 18px;
-    padding-left: 0px;
+    padding: 9px;
     text-decoration: none;
     font-size: 15px;
     font-weight: 600;
+    position: relative;
+
+  }
+  a:hover {
+    background-color: $purple;
   }
   .footerHeader {
     font-size: 24px;
@@ -323,6 +341,7 @@ footer {
     display: grid;
     grid-template-columns: 400px;
     grid-template-rows: 63px 35px 20px 33px 45px;
+    
   }
   .subBox {
     padding: 40px;
@@ -349,6 +368,9 @@ footer {
       padding-left: 14px;
       padding-right: 14px;
       font-weight: 500;
+    }
+    .subButton:hover {
+      background-color: $white;
     }
     i {
       margin-right: 14px;
