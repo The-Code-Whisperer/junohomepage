@@ -35,13 +35,13 @@ $darkbeige: #ffceb0;
 }
 
 body {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
   margin: 0px;
+  line-height: 1.6;
 }
 
-#blogHeader,
 #beigeHeader {
   font-size: 65px;
   font-weight: 520;
@@ -49,6 +49,15 @@ body {
   color: $purple;
   padding-left: 40px;
   margin-top: 40px;
+  padding-top: 25px;
+}
+#blogHeader {
+  margin-top: 0px;
+  font-size: 65px;
+  font-weight: 520;
+  font-family: "Cormorant Garamond", serif;
+  color: $purple;
+  padding-left: 40px;
   padding-top: 25px;
 }
 
@@ -102,6 +111,7 @@ body {
   margin-top: 18px;
 }
 
+// mobile
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {
     display: none;
@@ -123,7 +133,7 @@ body {
     }
   }
   #techContainer {
-    padding-top: 101px;
+    padding-top: 135px;
   }
   #techHeader {
     font-family: "Cormorant Garamond", serif;
@@ -143,6 +153,8 @@ body {
     color: $white;
   }
 }
+
+// tablet
 @media screen and (min-width: 601px) {
   #techContainer {
     width: 100%;
@@ -171,10 +183,11 @@ body {
   }
 }
 
-@media screen and (min-width: 900px) {
+// desktop
+@media screen and (min-width: 920px) {
   body {
     margin: auto;
-    width: 900px;
+    width: 920px;
   }
 }
 
@@ -260,7 +273,7 @@ body {
 }
 // custom button
 button {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 500;
   font-family: "Montserrat", serif;
   background-color: $buttonorange;
@@ -273,13 +286,11 @@ button {
 button:hover {
   background-color: $grey;
 }
-#aboutButton:hover {
-  background-color: $purple;
-}
+
 
 // custom button
 .whiteButton {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 500;
   font-family: "Montserrat", serif;
   background-color: $white;
@@ -298,10 +309,10 @@ button:hover {
 // footer
 footer {
   display: grid;
-  grid-template-columns: auto 290px;
+  grid-template-columns: auto 320px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 11px;
+  font-size: 12px;
   background-color: $orange;
   color: $white;
   padding-left: 40px;
@@ -341,15 +352,17 @@ footer {
   }
   .subBox {
     padding: 40px;
+    padding-bottom: 0px;
     margin-top: -80px;
     transform: translate(-40px, 10px);
     display: grid;
     justify-items: start;
     grid-template-columns: auto;
-    grid-template-rows: 30px 36px 8px 30px 60px;
+    grid-template-rows: 60px 36px 8px 30px 83px;
     .subHeader {
-      font-size: 14px;
-      font-weight: 600;
+      padding-top: 20px;
+      font-size: 16px;
+      font-weight: 900;
     }
     [type="email"] {
       border-radius: 5px;

@@ -25,13 +25,13 @@
 }
 
 body {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
   margin: 0px;
+  line-height: 1.6;
 }
 
-#blogHeader,
 #beigeHeader {
   font-size: 65px;
   font-weight: 520;
@@ -39,6 +39,16 @@ body {
   color: #4a455c;
   padding-left: 40px;
   margin-top: 40px;
+  padding-top: 25px;
+}
+
+#blogHeader {
+  margin-top: 0px;
+  font-size: 65px;
+  font-weight: 520;
+  font-family: "Cormorant Garamond", serif;
+  color: #4a455c;
+  padding-left: 40px;
   padding-top: 25px;
 }
 
@@ -116,7 +126,7 @@ body {
     text-align: left;
   }
   #techContainer {
-    padding-top: 101px;
+    padding-top: 135px;
   }
   #techHeader {
     font-family: "Cormorant Garamond", serif;
@@ -165,10 +175,10 @@ body {
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 920px) {
   body {
     margin: auto;
-    width: 900px;
+    width: 920px;
   }
 }
 
@@ -292,7 +302,7 @@ body {
 }
 
 button {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 500;
   font-family: "Montserrat", serif;
   background-color: #d96228;
@@ -307,12 +317,8 @@ button:hover {
   background-color: #7c7d98;
 }
 
-#aboutButton:hover {
-  background-color: #4a455c;
-}
-
 .whiteButton {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 500;
   font-family: "Montserrat", serif;
   background-color: #ffffff;
@@ -332,11 +338,11 @@ button:hover {
 footer {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto 290px;
-      grid-template-columns: auto 290px;
+  -ms-grid-columns: auto 320px;
+      grid-template-columns: auto 320px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 11px;
+  font-size: 12px;
   background-color: #d64c31;
   color: #ffffff;
   padding-left: 40px;
@@ -387,6 +393,7 @@ footer .footBox {
 
 footer .subBox {
   padding: 40px;
+  padding-bottom: 0px;
   margin-top: -80px;
   -webkit-transform: translate(-40px, 10px);
           transform: translate(-40px, 10px);
@@ -395,13 +402,14 @@ footer .subBox {
   justify-items: start;
   -ms-grid-columns: auto;
       grid-template-columns: auto;
-  -ms-grid-rows: 30px 36px 8px 30px 60px;
-      grid-template-rows: 30px 36px 8px 30px 60px;
+  -ms-grid-rows: 60px 36px 8px 30px 83px;
+      grid-template-rows: 60px 36px 8px 30px 83px;
 }
 
 footer .subBox .subHeader {
-  font-size: 14px;
-  font-weight: 600;
+  padding-top: 20px;
+  font-size: 16px;
+  font-weight: 900;
 }
 
 footer .subBox [type="email"] {
