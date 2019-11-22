@@ -339,7 +339,7 @@ footer {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto 320px;
-      grid-template-columns: auto 320px;
+  grid-template-columns: auto 320px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -360,7 +360,7 @@ footer img {
 
 footer .movedLeft {
   -webkit-transform: translate(-9px, 0px);
-          transform: translate(-9px, 0px);
+  transform: translate(-9px, 0px);
 }
 
 footer a {
@@ -386,9 +386,9 @@ footer .footBox {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 400px;
-      grid-template-columns: 400px;
+  grid-template-columns: 400px;
   -ms-grid-rows: 63px 35px 20px 33px 45px;
-      grid-template-rows: 63px 35px 20px 33px 45px;
+  grid-template-rows: 63px 35px 20px 33px 45px;
 }
 
 footer .subBox {
@@ -396,14 +396,14 @@ footer .subBox {
   padding-bottom: 0px;
   margin-top: -80px;
   -webkit-transform: translate(-40px, 10px);
-          transform: translate(-40px, 10px);
+  transform: translate(-40px, 10px);
   display: -ms-grid;
   display: grid;
   justify-items: start;
   -ms-grid-columns: auto;
-      grid-template-columns: auto;
+  grid-template-columns: auto;
   -ms-grid-rows: 60px 36px 8px 30px 83px;
-      grid-template-rows: 60px 36px 8px 30px 83px;
+  grid-template-rows: 60px 36px 8px 30px 83px;
 }
 
 footer .subBox .subHeader {
