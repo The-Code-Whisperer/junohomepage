@@ -145,12 +145,9 @@ body {
         font-weight: 500;
         font-size: 40px;
         margin-top: 0px;
-
       }
     }
   }
-
-
 
   // single align boxes in mobile
   .container {
@@ -192,21 +189,13 @@ body {
       width: 100%;
     }
     // blog boxes
-    .box1 {
- 
-    }
 
-    .box2 {
-    }
     .box3 {
       height: max-content;
       background-color: $grey;
       .description {
         background-color: $grey;
       }
-    }
-
-    .box4 {
     }
 
     // related posts boxes
