@@ -33,7 +33,9 @@ $darkbeige: #ffceb0;
   font-weight: 500;
   font-size: 45px;
 }
-
+#junologo {
+  transform: translateX(-30px);
+}
 body {
   font-size: 12px;
   font-weight: 400;
@@ -113,23 +115,15 @@ body {
 
 // mobile
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {
-    display: none;
-  }
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-  .topnav.responsive {
+
+  .topnav {
     position: relative;
-    .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
     a {
-      display: block;
+      display: inline-block;
       text-align: left;
+    }
+    span {
+      display: block;
     }
   }
   #techContainer {
@@ -152,8 +146,75 @@ body {
     padding-right: 30px;
     color: $white;
   }
-}
 
+  // single align boxes in mobile
+  .container {
+    padding: 40px;
+    display: grid;
+    color: $white;
+    grid-gap: 2em;
+    grid-template-columns: repeat(autofit, minmax(400px, auto));
+    .date {
+      padding-bottom: 10px;
+    }
+
+    div {
+      background-color: $purple;
+    }
+    .blogCardHeader {
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .blogCardHeader2 {
+      font-size: 20px;
+      font-weight: 700;
+      background-color: $grey;
+    }
+    .description {
+      padding: 20px;
+    }
+    .whiteBack {
+      background-color: white;
+      color: black;
+    }
+    .postDescHead {
+      color: $orange;
+      background-color: white;
+    }
+
+    img {
+      height: auto;
+      width: 100%;
+    }
+    // blog boxes
+    .box1 {
+    }
+
+    .box2 {
+    }
+    .box3 {
+      height: max-content;
+      background-color: $grey;
+      .description {
+        background-color: $grey;
+      }
+    }
+
+    .box4 {
+    }
+
+    // related posts boxes
+    .postBox1 {
+      margin-bottom: 30px;
+    }
+    .postBox2 {
+      margin-bottom: 30px;
+    }
+    .postBox3 {
+      margin-bottom: 30px;
+    }
+  }
+}
 // tablet
 @media screen and (min-width: 601px) {
   #techContainer {
@@ -180,54 +241,6 @@ body {
     padding-bottom: 30px;
     padding-right: 10px;
     color: $white;
-  }
-}
-
-// desktop
-@media screen and (min-width: 920px) {
-  body {
-    margin: auto;
-    width: 920px;
-  }
-}
-
-// blog grid containers
-.container {
-  padding: 40px;
-  display: grid;
-  color: $white;
-  grid-gap: 2em;
-  .date {
-    padding-bottom: 10px;
-  }
-
-  div {
-    background-color: $purple;
-  }
-  .blogCardHeader {
-    font-size: 20px;
-    font-weight: 700;
-  }
-  .blogCardHeader2 {
-    font-size: 20px;
-    font-weight: 700;
-    background-color: $grey;
-  }
-  .description {
-    padding: 20px;
-  }
-  .whiteBack {
-    background-color: white;
-    color: black;
-  }
-  .postDescHead {
-    color: $orange;
-    background-color: white;
-  }
-
-  img {
-    height: auto;
-    width: 100%;
   }
   // blog boxes
   .box1 {
@@ -270,6 +283,56 @@ body {
     grid-row: 1/2;
     margin-bottom: 30px;
   }
+}
+
+// desktop
+@media screen and (min-width: 920px) {
+  body {
+    margin: auto;
+    width: 920px;
+  }
+}
+
+// blog grid containers
+.container {
+  padding: 40px;
+  display: grid;
+  color: $white;
+  grid-gap: 2em;
+  grid-template-columns: repeat(autofit, minmax(50rem, auto));
+  .date {
+    padding-bottom: 10px;
+  }
+
+  div {
+    background-color: $purple;
+  }
+  .blogCardHeader {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .blogCardHeader2 {
+    font-size: 20px;
+    font-weight: 700;
+    background-color: $grey;
+  }
+  .description {
+    padding: 20px;
+  }
+  .whiteBack {
+    background-color: white;
+    color: black;
+  }
+  .postDescHead {
+    color: $orange;
+    background-color: white;
+  }
+
+  img {
+    height: auto;
+    width: 100%;
+  }
+  // blog boxes
 }
 // custom button
 button {
