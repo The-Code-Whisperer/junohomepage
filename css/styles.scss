@@ -115,7 +115,6 @@ body {
 
 // mobile
 @media screen and (max-width: 600px) {
-
   .topnav {
     position: relative;
     a {
@@ -135,7 +134,7 @@ body {
     font-size: 40px;
   }
   .techText {
-    width: 90%;
+    width: 100%;
     position: absolute;
     left: 0px;
     top: 0px;
@@ -143,7 +142,6 @@ body {
     background-color: $orange;
     padding-left: 30px;
     padding-bottom: 10px;
-    padding-right: 30px;
     color: $white;
   }
 
@@ -214,7 +212,91 @@ body {
       margin-bottom: 30px;
     }
   }
+  // footer
+  footer {
+    display: grid;
+    grid-template-columns: auto 320px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    background-color: $orange;
+    color: $white;
+    padding-left: 40px;
+    padding-top: 300px;
+    padding-bottom: 10px;
+    grid-gap: 10px;
+
+    img {
+      position: relative;
+      left: -5px;
+      width: 160px;
+      height: auto;
+    }
+    .movedLeft {
+      transform: translate(-9px, 0px);
+    }
+    a {
+      display: inline;
+      color: $white;
+      padding: 9px;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 600;
+      position: relative;
+    }
+    a:hover {
+      background-color: $purple;
+    }
+    .footerHeader {
+      font-size: 24px;
+      font-weight: 600;
+    }
+    .footBox {
+      display: grid;
+      grid-template-columns: 400px;
+      grid-template-rows: 63px 35px 20px 33px 45px;
+    }
+    .subBox {
+      padding: 40px;
+      padding-bottom: 0px;
+      margin-top: -80px;
+      transform: translate(-410px, -250px);
+      display: grid;
+      justify-items: start;
+      grid-template-columns: auto;
+      grid-template-rows: 60px 36px 8px 30px 83px;
+      .subHeader {
+        padding-top: 20px;
+        font-size: 16px;
+        font-weight: 900;
+      }
+      [type="email"] {
+        border-radius: 5px;
+        border-style: none;
+        border-color: black;
+        padding-left: 12px;
+      }
+      .subButton {
+        background-color: $darkbeige;
+        border-radius: 5px;
+        border-style: none;
+        padding-left: 14px;
+        padding-right: 14px;
+        font-weight: 500;
+      }
+      .subButton:hover {
+        background-color: $white;
+      }
+      i {
+        margin-right: 14px;
+      }
+    }
+    #copyright {
+      font-weight: 800;
+    }
+  }
 }
+
 // tablet
 @media screen and (min-width: 601px) {
   #techContainer {
@@ -282,6 +364,89 @@ body {
     grid-column: 3/4;
     grid-row: 1/2;
     margin-bottom: 30px;
+  }
+  // footer
+  footer {
+    display: grid;
+    grid-template-columns: auto 320px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    background-color: $orange;
+    color: $white;
+    padding-left: 40px;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    grid-gap: 10px;
+
+    img {
+      position: relative;
+      left: -5px;
+      width: 160px;
+      height: auto;
+    }
+    .movedLeft {
+      transform: translate(-9px, 0px);
+    }
+    a {
+      display: inline;
+      color: $white;
+      padding: 9px;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 600;
+      position: relative;
+    }
+    a:hover {
+      background-color: $purple;
+    }
+    .footerHeader {
+      font-size: 24px;
+      font-weight: 600;
+    }
+    .footBox {
+      display: grid;
+      grid-template-columns: 400px;
+      grid-template-rows: 63px 35px 20px 33px 45px;
+    }
+    .subBox {
+      padding: 40px;
+      padding-bottom: 0px;
+      margin-top: -80px;
+      transform: translate(-40px, 10px);
+      display: grid;
+      justify-items: start;
+      grid-template-columns: auto;
+      grid-template-rows: 60px 36px 8px 30px 83px;
+      .subHeader {
+        padding-top: 20px;
+        font-size: 16px;
+        font-weight: 900;
+      }
+      [type="email"] {
+        border-radius: 5px;
+        border-style: none;
+        border-color: black;
+        padding-left: 12px;
+      }
+      .subButton {
+        background-color: $darkbeige;
+        border-radius: 5px;
+        border-style: none;
+        padding-left: 14px;
+        padding-right: 14px;
+        font-weight: 500;
+      }
+      .subButton:hover {
+        background-color: $white;
+      }
+      i {
+        margin-right: 14px;
+      }
+    }
+    #copyright {
+      font-weight: 800;
+    }
   }
 }
 
@@ -366,88 +531,4 @@ button:hover {
 }
 .whiteButton:hover {
   background-color: $grey;
-}
-
-// footer
-footer {
-  display: grid;
-  grid-template-columns: auto 320px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  background-color: $orange;
-  color: $white;
-  padding-left: 40px;
-  padding-top: 25px;
-  padding-bottom: 10px;
-  grid-gap: 10px;
-
-  img {
-    position: relative;
-    left: -5px;
-    width: 160px;
-    height: auto;
-  }
-  .movedLeft {
-    transform: translate(-9px, 0px);
-  }
-  a {
-    display: inline;
-    color: $white;
-    padding: 9px;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 600;
-    position: relative;
-  }
-  a:hover {
-    background-color: $purple;
-  }
-  .footerHeader {
-    font-size: 24px;
-    font-weight: 600;
-  }
-  .footBox {
-    display: grid;
-    grid-template-columns: 400px;
-    grid-template-rows: 63px 35px 20px 33px 45px;
-  }
-  .subBox {
-    padding: 40px;
-    padding-bottom: 0px;
-    margin-top: -80px;
-    transform: translate(-40px, 10px);
-    display: grid;
-    justify-items: start;
-    grid-template-columns: auto;
-    grid-template-rows: 60px 36px 8px 30px 83px;
-    .subHeader {
-      padding-top: 20px;
-      font-size: 16px;
-      font-weight: 900;
-    }
-    [type="email"] {
-      border-radius: 5px;
-      border-style: none;
-      border-color: black;
-      padding-left: 12px;
-    }
-    .subButton {
-      background-color: $darkbeige;
-      border-radius: 5px;
-      border-style: none;
-      padding-left: 14px;
-      padding-right: 14px;
-      font-weight: 500;
-    }
-    .subButton:hover {
-      background-color: $white;
-    }
-    i {
-      margin-right: 14px;
-    }
-  }
-  #copyright {
-    font-weight: 800;
-  }
 }
